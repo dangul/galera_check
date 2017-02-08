@@ -13,7 +13,6 @@ ClusterSize="/usr/lib64/nagios/plugins/pmp-check-mysql-status -x wsrep_cluster_s
 FlowControl="/usr/lib64/nagios/plugins/pmp-check-mysql-status -x wsrep_flow_control_paused -w 0.1 -c 0.9 -p $PASSWORD"
 
 function TestStatus (){
-
    if [ $? -eq 0 ]; then
        printf "${GREEN}"
    else
